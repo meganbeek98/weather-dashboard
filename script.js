@@ -1,0 +1,5 @@
+var button = document.querySelector('.button')
+var inputValue = document.querySelector('.inputValue')
+var name = document.querySelector('.name')
+var decscription = document.querySelector('.description')
+var temp = document.querySelector('.temp')
