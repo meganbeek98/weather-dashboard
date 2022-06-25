@@ -19,16 +19,24 @@ body {
 
 .input {
     text-align: center;
+    margin: 100px 0 100px 0;
 }
 
-input {
+input[type="text"]{
     height: 50px;
     width: 600px;
-    background: #bee9e8ff;
+    background: #BEE9E8;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px 10px 10px;
 
+}
+
+.display {
+    text-align: center;
 }
 
 /* color gradients and animators for later*/
