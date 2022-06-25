@@ -78,7 +78,7 @@ $ajax ({
 
         $(".1-temp").text("Temp: " + response.list[0].main.temp + " F");
         $(".1-date").html("<h6>" + Day1 + "</h6>");
-        $(".1-icon")
+        $(".1-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png'>");
         $(".1-humid")
 
         // Day 2
@@ -86,7 +86,7 @@ $ajax ({
 
         $(".2-temp").text("Temp: " + response.list[8].main.temp + " F");
         $(".2-date").html("<h6>" + Day2 + "</h6>");
-        $(".2-icon")
+        $(".2-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[8].weather[0].icon + ".png'>");
         $(".2-humid")
 
         // Day 3
@@ -94,14 +94,14 @@ $ajax ({
 
         $(".3-temp").text("Temp: " + response.list[16].main.temp + " F");
         $(".3-date").html("<h6>" + Day3 + "</h6>");
-        $(".3-icon")
+        $(".3-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[16].weather[0].icon + ".png'>");
         $(".3-humid")
 
         // Day 4
         var Day4 = moment(response.list[24].dt_text).format("ddd, MMM D");
         $(".4-temp").text("Temp: " + response.list[24].main.temp + " F");
         $(".4-date").html("<h6>" + Day4 + "</h6>");
-        $(".4-icon")
+        $(".4-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[24].weather[0].icon + ".png'>");
         $(".4-humid")
 
         // Day 5
@@ -109,7 +109,7 @@ $ajax ({
 
         $(".5-temp").text("Temp: " + response.list[32].main.temp + " F");
         $(".5-date").html("<h6>" + Day5 + "</h6>");
-        $(".5-icon")
+        $(".5-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[32].weather[0].icon + ".png'>");
         $(".5-humid")
 
 
