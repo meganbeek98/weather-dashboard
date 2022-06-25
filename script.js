@@ -12,7 +12,7 @@ button.addEventListener('click',function(){
     .then(data => {
         var nameEl = data['name'];
         var tempEl = data['main']['temp'];
-        var decriptionEl = data['weather'][0]['description'];
+        var descriptionEl = data['weather'][0]['description'];
 
         name.innerHTML = nameEl;
         temp.innerHTML = tempEl;

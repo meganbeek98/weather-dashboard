@@ -19,21 +19,35 @@
         <header>
             <h1>WEATHER DASHBOARD</h1>
         </header>
-        <section class="vh-100">
-            <div class="container py-5">
-                <div class="input">
-                    <input type="text" class="input" id="" placeholder="Enter a city">
-                    <input type="submit" class="button" value="Submit">
+
+        <!-- Main Search Section START-->
+        <section class="main-container container-fluid">
+            <div class="row">
+
+                <!--Search Bar/ User Input START-->
+                <div id="search-bar" class="input col-md-4">
+                    <div class="card-body">
+                        <form class="form-inline">
+                            <input type="search" class="form-control mr-sm-2 input" id="" placeholder="Enter a city">
+
+                            <button class="btn btn-primary my-2 my-sm-0 search search-btn" type="submit">
+                                <i class="fas fa-search-location"></i>
+                            </button>    
+
+                        </form>
+
+                        <div class="search-history"></div>
+
+                    </div>
         
                 </div>
-        
-                <div class="display">
-                    <h1 class="name"></h1>
-                    <p class="description"></p>
-                    <p class="temp"></p>
-        
-                </div>
+
             </div>
+
+        </section>
+        
+        <!-- Forecast Columns Section START-->
+        <section class="col-md-8 container-left-columns">
 
         </section>
 
@@ -52,3 +66,13 @@
     </body>
 
 </html>
+
+        <!-- 
+                  <div class="display">
+                    <h1 class="name"></h1>
+                    <p class="description"></p>
+                    <p class="temp"></p>
+        
+                </div>
+
+        -->
