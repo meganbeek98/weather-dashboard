@@ -13,10 +13,21 @@ var weatherLink = "https://api.openweathermap.org/data/2.5/weather?q=" + cityNam
 // link for 5-day forecast info
 var forecastLink = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + '&units=imperial' + APIkey;
 
+// input value setting
 function trackCityData() {
     localStorage.setItem('cityNameStore', inputEl.value);
 }
 
+// add previously searched cities to history list
+for (var i=0; i < localStorage.length; i++) {
+    $(".cities-list").append("<p>" + localStorage.getItem(localStorage.key(i)) + "<p>");
+}
+
+// GET (function) Day 1 (current day) Forecast Data
+$.ajax ({
+    url: weatherLink,
+    method: "GET"
+})
 
 
 
