@@ -76,41 +76,41 @@ $ajax ({
         // Day 1
         var Day1 = moment(response.list[0].dt_text).format("ddd, MMM D ");
 
-        $("")
-        $("")
-        $("")
-        $("")
+        $(".-temp")
+        $(".-date")
+        $(".-icon")
+        $(".-humid")
 
         // Day 2
         var Day2 = moment(response.list[8].dt_text).format("ddd, MMM D");
 
-        $("")
-        $("")
-        $("")
-        $("")
+        $(".-temp")
+        $(".-date")
+        $(".-icon")
+        $(".-humid")
 
         // Day 3
         var Day3 = moment(response.list[16].dt_text).format("ddd, MMM D");
 
-        $("")
-        $("")
-        $("")
-        $("")
+        $(".-temp")
+        $(".-date")
+        $(".-icon")
+        $(".-humid")
 
         // Day 4
         var Day4 = moment(response.list[24].dt_text).format("ddd, MMM D");
-        $("")
-        $("")
-        $("")
-        $("")
+        $(".-temp")
+        $(".-date")
+        $(".-icon")
+        $(".-humid")
 
         // Day 5
         var Day5 = moment(response.list[32].dt_text).format("ddd, MMM D");
 
-        $("")
-        $("")
-        $("")
-        $("")
+        $(".-temp")
+        $(".-date")
+        $(".-icon")
+        $(".-humid")
 
 
     })
