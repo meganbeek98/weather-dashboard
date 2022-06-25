@@ -77,7 +77,7 @@ $ajax ({
         var Day1 = moment(response.list[0].dt_text).format("ddd, MMM D ");
 
         $(".1-temp").text("Temp: " + response.list[0].main.temp + " F");
-        $(".1-date")
+        $(".1-date").html("<h6>" + Day1 + "</h6>");
         $(".1-icon")
         $(".1-humid")
 
@@ -85,7 +85,7 @@ $ajax ({
         var Day2 = moment(response.list[8].dt_text).format("ddd, MMM D");
 
         $(".2-temp").text("Temp: " + response.list[8].main.temp + " F");
-        $(".2-date")
+        $(".2-date").html("<h6>" + Day2 + "</h6>");
         $(".2-icon")
         $(".2-humid")
 
@@ -93,14 +93,14 @@ $ajax ({
         var Day3 = moment(response.list[16].dt_text).format("ddd, MMM D");
 
         $(".3-temp").text("Temp: " + response.list[16].main.temp + " F");
-        $(".3-date")
+        $(".3-date").html("<h6>" + Day3 + "</h6>");
         $(".3-icon")
         $(".3-humid")
 
         // Day 4
         var Day4 = moment(response.list[24].dt_text).format("ddd, MMM D");
         $(".4-temp").text("Temp: " + response.list[24].main.temp + " F");
-        $(".4-date")
+        $(".4-date").html("<h6>" + Day4 + "</h6>");
         $(".4-icon")
         $(".4-humid")
 
@@ -108,7 +108,7 @@ $ajax ({
         var Day5 = moment(response.list[32].dt_text).format("ddd, MMM D");
 
         $(".5-temp").text("Temp: " + response.list[32].main.temp + " F");
-        $(".5-date")
+        $(".5-date").html("<h6>" + Day5 + "</h6>");
         $(".5-icon")
         $(".5-humid")
 
