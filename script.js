@@ -56,6 +56,41 @@ $.ajax ({
 
     });
 
+// show the current day/date
+var dateCurrent = moment().format("dddd, MMMM Do ");
+
+function dateFunction() {
+    $(".current-date").text(dateCurrent);
+};
+dateFunction();
+
+// show 5-day forecast
+$ajax ({
+    url: forecastLink,
+    method: "GET"
+})
+
+    .then(function(response){
+        var Day1 = moment(response.list[0].dt_text).format("ddd, MMM D ");
+
+        // Day 1
+        $("")
+
+        // Day 2
+        $("")
+
+        // Day 3
+        $("")
+
+        // Day 4
+        $("")
+
+        // Day 5
+        $("")
+
+
+    })
+
 
 
 
