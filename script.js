@@ -65,12 +65,12 @@ function dateFunction() {
 dateFunction();
 
 // show 5-day forecast
-$ajax ({
+$.ajax ({
     url: forecastLink,
     method: "GET"
 })
 
-    .then(function(response){
+    .then(function (response) {
         // START of variables for indivual days (in 5-Day Forecast)
 
         // Day 1
@@ -113,7 +113,11 @@ $ajax ({
         $(".5-humid").text("Humidity: " + response.list[32].main.humidity + "%");
 
 
-    })
+    });
+
+    // EVENT LISTENERS
+
+    searchBtn.addEventListener('click', trackCityData);
 
 
 
