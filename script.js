@@ -1,7 +1,7 @@
-var APIkey = '&appid=c70ed702f401fa0e4a0c11c4caa37f82';
+var APIkey = '&appid=6eb680228505dc4f45eadbaa691858ce';
 
 var inputEl = document.querySelector('.input')
-var citiesList = document.querySelector('cities-list')
+var citiesSearched = document.querySelector('cities-searched')
 var searchBtn = document.querySelector('.search-button')
 
 
@@ -19,8 +19,8 @@ function trackCityData() {
 }
 
 // add previously searched cities to history list
-for (var i=0; i < localStorage.length; i++) {
-    $(".cities-list").append("<p>" + localStorage.getItem(localStorage.key(i)) + "<p>");
+for (var i = 0; i < localStorage.length; i++) {
+    $(".cities-searched").append("<p>" + localStorage.getItem(localStorage.key(i)) + "<p>");
 }
 
 // GET (function) Day 1 (current day) Forecast Data
@@ -35,7 +35,7 @@ $.ajax ({
         $('.weather-icon').html("<img src='https://openweathermap.org/img/w/" + response.weather[0].icon + ".png'>");
         $('.winds').text("WIND SPEED: " + response.wind.speed + "mph");
         $('.humid').text("HUMIDITY: " + response.main.humidity + "%");
-        $('temp').text("TEMPERATURE: " + response.main.temp + " F");
+        $('.temp').text("TEMPERATURE: " + response.main.temp + " F");
 
         var lat = response.coord.lat;
         var lon = response.coord.lon;
@@ -50,7 +50,7 @@ $.ajax ({
             .then(function(response) {
                 var uvIndexValue = response.value;
 
-                $('.uv').text("UV INDEX: " + response.value);
+                $('.uv-index').text("UV INDEX: " + response.value);
 
             });
 
@@ -118,6 +118,8 @@ $.ajax ({
     // EVENT LISTENERS
 
     searchBtn.addEventListener('click', trackCityData);
+
+    navigator.geolocation.getCurrentPosition();
 
 
 

@@ -1,11 +1,12 @@
-/*color scheme*/
-:root {
+/*color scheme
     --powder-blue: #BEE9E8;
     --maximum-blue: #62b6cbff;
     --indigo-dye: #1b4965ff;
     --columbia-blue: #cae9ffff;
     --carolina-blue: #5fa8d3ff;
-}
+
+    style="background: linear-gradient(270deg, #1b4965, #62b6cb, #5fa8d3, #cae9ff, #bee9e8);"
+*/
 
 *{
     margin: 0;
@@ -17,43 +18,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.input {
-    text-align: center;
-    margin: 100px 0 100px 0;
-}
-
-input[type="text"]{
-    height: 50px;
-    width: 600px;
-    background: #BEE9E8;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 2px;
-    padding: 10px 10px 10px 10px;
-
-}
-
-.search-btn {
-
-}
-
-.card-city {
-
-}
-
-.display {
-    text-align: center;
-}
-
-h1 {
-    color: #BEE9E8;
-}
-
 /* color gradients and animators for later*/
 /*
-style="background: linear-gradient(270deg, #1b4965, #62b6cb, #5fa8d3, #cae9ff, #bee9e8);"
 
 .css-selector {
     background: linear-gradient(270deg, #1b4965, #62b6cb, #5fa8d3, #cae9ff, #bee9e8);
@@ -73,5 +39,7 @@ style="background: linear-gradient(270deg, #1b4965, #62b6cb, #5fa8d3, #cae9ff, #
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+
 */
 
