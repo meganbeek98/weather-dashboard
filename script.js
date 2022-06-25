@@ -71,21 +71,30 @@ $ajax ({
 })
 
     .then(function(response){
-        var Day1 = moment(response.list[0].dt_text).format("ddd, MMM D ");
+        // START of variables for indivual days (in 5-Day Forecast)
 
         // Day 1
+        var Day1 = moment(response.list[0].dt_text).format("ddd, MMM D ");
+
         $("")
 
         // Day 2
+        var Day2 =
+
         $("")
 
         // Day 3
+        var Day3 =
+
         $("")
 
         // Day 4
+        var Day4 =
         $("")
 
         // Day 5
+        var Day5 =
+
         $("")
 
 
