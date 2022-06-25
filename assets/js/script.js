@@ -118,8 +118,6 @@ $.ajax ({
 
     searchBtn.addEventListener('click', trackCityData);
 
-    navigator.geolocation.getCurrentPosition();
-
 
 
 
