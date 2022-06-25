@@ -1,6 +1,6 @@
 var APIkey = '&appid=6eb680228505dc4f45eadbaa691858ce';
 
-var inputEl = document.querySelector('.input')
+var input = document.querySelector('.input')
 var citiesSearched = document.querySelector('cities-searched')
 var searchBtn = document.querySelector('.search-button')
 
@@ -15,7 +15,7 @@ var forecastLink = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityN
 
 // input value setting
 function trackCityData() {
-    localStorage.setItem('cityNameStore', inputEl.value);
+    localStorage.setItem('cityNameStore', input.value);
 }
 
 // add previously searched cities to history list
