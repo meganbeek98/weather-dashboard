@@ -37,13 +37,28 @@ $.ajax ({
         $('.humid').text("HUMIDITY: " + response.main.humidity + "%");
         $('temp').text("TEMPERATURE: " + response.main.temp + " F");
 
+        var lat = response.coord.lat;
+        var lon = response.coord.lon;
+        var uvIndexLink = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + apiKey;
 
-    })
+        // function for the UV Index; GET the UV Index
+        $.ajax ({
+            url: uvIndexLink,
+            method: "GET"
+        })
+
+            .then(function(response) {
+                var uvIndexValue = response.value;
+
+                $('.uv').text("UV INDEX: " + response.value);
+
+            });
+
+    });
 
 
 
-// .catch(err => alert("You entered an INVALID city name!"))
 
-//     var tempValue/tempEl = data['main']['temp'];
-//     var nameValue/nameEl = data['name'];
-//     var descriptonValue/descriptionEl = data['weather'][0]['description'];
+// just notes for later
+    // .catch(err => alert("You entered an INVALID city name!"))
+    // $('.uv').css("background-color", uvColor(uvIndexValue));
