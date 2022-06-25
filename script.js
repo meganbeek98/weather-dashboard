@@ -29,6 +29,17 @@ $.ajax ({
     method: "GET"
 })
 
+    .then(function(response) {
+
+        $('.city').html("<h2>" + response.name + "</h2>");
+        $('.weather-icon').html("<img src='https://openweathermap.org/img/w/" + response.weather[0].icon + ".png'>");
+        $('.winds').text("WIND SPEED: " + response.wind.speed + "mph");
+        $('.humid').text("HUMIDITY: " + response.main.humidity + "%");
+        $('temp').text("TEMPERATURE: " + response.main.temp + " F");
+
+
+    })
+
 
 
 // .catch(err => alert("You entered an INVALID city name!"))
