@@ -112,7 +112,6 @@ $.ajax ({
         $(".5-icon").html("<img src='https://openweathermap.org/img/w/" + response.list[32].weather[0].icon + ".png'>");
         $(".5-humid").text("Humidity: " + response.list[32].main.humidity + "%");
 
-
     });
 
     // EVENT LISTENERS
